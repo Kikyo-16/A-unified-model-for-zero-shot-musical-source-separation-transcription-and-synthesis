@@ -1,0 +1,13 @@
+INFERENCE_BATCH_SIZE = 12
+BATCH_FRAMES_NUM = 410
+N_ITER = 200
+PAD_FRAME = 5
+
+TEST_DATA_LST_PATH = "data/urmp/testset/test.lst" 
+TEST_QUERY_LST_PATH = "data/urmp/testset/query.lst"
+
+
+SYN_DURATION = 10
+SYN_SONG_ONSET = 25
+
+MIX_ONSET = 35
