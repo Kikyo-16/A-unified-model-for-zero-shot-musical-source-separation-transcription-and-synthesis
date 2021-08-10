@@ -46,7 +46,7 @@ def spec2wav(x, cos, sin, wav_len, syn_phase=0, device="cuda"):
 
 	if syn_phase == 1:
 		print("here")
-		wav_len = int((x.shape[-2] - 1)/ FRAMES_PER_SECOND * SAMPLE_RATE)
+		wav_len = int((x.shape[-2] - 1)/ FRAMES_PER_SEC * SAMPLE_RATE)
 		wav = AF.griffinlim(x.transpose(1, 2), 
 												window=fft_window, 
 												n_fft=N_FFT, 

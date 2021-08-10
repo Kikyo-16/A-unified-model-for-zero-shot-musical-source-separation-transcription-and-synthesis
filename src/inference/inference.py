@@ -16,7 +16,7 @@ from utils.weiMidi import WeiMidi
 
 from conf.feature import *
 from conf.sample import *
-
+from conf.inference import *
 
 modes = {"AMT" : ["AMT"],
 				"MSS" : ["MSS"],
@@ -68,7 +68,7 @@ def move2cuda(batch):
 	return batch
 
 class Inference():
-	def __init__(self, model_name, model_path, output_dir, epoch):
+	def __init__(self, model_name, model_path, output_dir, epoch=None):
 		
 		self.model_name = model_name
 		self.test_data = UrmpTest()
@@ -78,7 +78,7 @@ class Inference():
 		
 		mkdir(output_dir)
 		self.output_dir = output_dir
-		self.score_path = os.path.join(output_dir, f"scores-{epoch}.json")
+		self.score_path = os.path.join(output_dir, f"scores-{epoch}.json") if epoch is not None else os.path.join(output_dir, f"scores.json")
 
 
 	def query(self, spec_batches, reduce_dim=True):
@@ -94,7 +94,7 @@ class Inference():
 		return hQuery
 			
 
-	def predict(self, batches, condition):
+	def predict(self, batches, condition, mode=None):
 		preds = []
 		condition = condition[None, ...]
 		self.network.eval()
@@ -102,7 +102,10 @@ class Inference():
 			for batch in batches:
 				batch = move2cuda(batch)
 				batch = batch + [condition] if type(batch) is list else [batch, condition]
-				preds.append(self.network(batch))
+				if mode is None:
+					preds.append(self.network(batch))
+				else:
+					preds.append(self.network(batch, mode)) 
 		return preds
 
 
@@ -135,7 +138,7 @@ class Inference():
 		model_name = self.model_name	
 		song = WeiMidi(path)
 		song = song[track_id]
-		song = song[SYN_SONG_ONSET * FREAMS_PER_SEC : (SYN_SONG_ONSET + SYN_DURATION) * FREAMS_PER_SEC]
+		song = song[SYN_SONG_ONSET * FRAMES_PER_SEC : (SYN_SONG_ONSET + SYN_DURATION) * FRAMES_PER_SEC]
 		sample_index = 0
 
 		for sample in self.test_data.test_samples():
