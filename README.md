@@ -34,7 +34,7 @@ To further improve the timbre disentanglement performance, we propose a *pitch-t
 ## Experimental results
 
 |            Model|MSS-only|        Multi-task|       MSI (ours)| MSI-DIS (ours)|
-|                  ----|        ----|        ----|        ----|        ----|     ----|
+|                  ----|        ----|        ----|        ----|        ----|
 |  Seen|        4.69 ± 0.31| 3.32 ± 0.1|   **6.33 ± 0.17**|     5.04 ± 0.16|
 |   Unseen|    **6.20 ± 0.26**|   4.63 ± 0.34|   5.53 ± 0.11|      3.99 ± 0.22| 
 |   **Overall**|     5.07 ± 0.22|   3.65 ± 0.22|   **6.13 ± 0.15**|     4.77 ± 0.14|  
@@ -59,11 +59,11 @@ pip install -r requirements.txt
 ```
 **NOTE** that `ur_unzipped_dataset_folder` is your unzipped data folder and it should contain directories of songs:
 > .
-├── `ur_unzipped_dataset_folder`
-│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── `0_song0`
-│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── `1_song1`
-│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── ...
-│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...
+├── `ur_unzipped_dataset_folder`  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── `0_song0`  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── `1_song1`  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── ...  
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...  
 
 ### Training
 Run the following command to train the proposed MSI-DIS Model:
@@ -93,11 +93,11 @@ python synthesis.py --model_name=MSI-DIS --model_path=path_of_model_weights --ev
 ## Citation
 Please cite our work as:
 
->@inproceedings{lin2021unified,
->title={A Unified Model for Zero-shot Music Source Separation, Transcription and Synthesis}, 
->author={Liwei Lin and Qiuqiang Kong and Junyan Jiang and Gus Xia},
->booktitle = {Proceedings of 21st International Conference on Music Information Retrieval, {ISMIR}},
->year = {2021}
+>@inproceedings{lin2021unified,  
+>title={A Unified Model for Zero-shot Music Source Separation, Transcription and Synthesis},   
+>author={Liwei Lin and Qiuqiang Kong and Junyan Jiang and Gus Xia},  
+>booktitle = {Proceedings of 21st International Conference on Music Information Retrieval, {ISMIR}},  
+>year = {2021}  
 >}
 
 ## License
