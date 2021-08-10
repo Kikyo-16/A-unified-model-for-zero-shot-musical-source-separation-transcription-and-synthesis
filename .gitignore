@@ -7,7 +7,6 @@ data/urmp-test/
 data/urmp-rec/
 save_model/
 output/
-dataset/
 output/
 reproduce_dataset/
 results/
