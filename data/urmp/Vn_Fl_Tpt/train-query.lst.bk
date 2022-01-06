@@ -1,0 +1,13 @@
+Oboe,Bassoon	dataset/hdf5s/urmp/41_Miserere_fl_fl_ob_sax_bn/AuSep_3_ob_41_Miserere.h5,dataset/hdf5s/urmp/41_Miserere_fl_fl_ob_sax_bn/AuSep_5_bn_41_Miserere.h5
+Oboe,Bassoon	dataset/hdf5s/urmp/28_Fugue_fl_ob_cl_bn/AuSep_2_ob_28_Fugue.h5,dataset/hdf5s/urmp/28_Fugue_fl_ob_cl_bn/AuSep_4_bn_28_Fugue.h5
+Tuba,Horn	dataset/hdf5s/urmp/42_Arioso_tpt_tpt_hn_tbn_tba/AuSep_5_tba_42_Arioso.h5,dataset/hdf5s/urmp/42_Arioso_tpt_tpt_hn_tbn_tba/AuSep_3_hn_42_Arioso.h5
+Tuba,Horn	dataset/hdf5s/urmp/43_Chorale_tpt_tpt_hn_tbn_tba/AuSep_5_tba_43_Chorale.h5,dataset/hdf5s/urmp/43_Chorale_tpt_tpt_hn_tbn_tba/AuSep_3_hn_43_Chorale.h5
+Violin,Clarinet	dataset/hdf5s/urmp/32_Fugue_vn_vn_va_vc/AuSep_2_vn_32_Fugue.h5,dataset/hdf5s/urmp/28_Fugue_fl_ob_cl_bn/AuSep_3_cl_28_Fugue.h5
+Saxophone,Flute	dataset/hdf5s/urmp/23_Rejouissance_cl_sax_tba/AuSep_2_sax_23_Rejouissance.h5,dataset/hdf5s/urmp/37_Rondeau_fl_vn_va_cl/AuSep_1_fl_37_Rondeau.h5 
+Viola,Cello	dataset/hdf5s/urmp/32_Fugue_vn_vn_va_vc/AuSep_3_va_32_Fugue.h5,dataset/hdf5s/urmp/32_Fugue_vn_vn_va_vc/AuSep_4_vc_32_Fugue.h5
+Trumpet,Trombone	dataset/hdf5s/urmp/18_Nocturne_vn_fl_tpt/AuSep_3_tpt_18_Nocturne.h5,dataset/hdf5s/urmp/21_Rejouissance_cl_tbn_tba/AuSep_2_tbn_21_Rejouissance.h5
+Violin,Double_bass	dataset/hdf5s/urmp/32_Fugue_vn_vn_va_vc/AuSep_2_vn_32_Fugue.h5,dataset/hdf5s/urmp/38_Jerusalem_vn_vn_va_vc_db/AuSep_5_db_38_Jerusalem.h5
+Trombone,Tuba	dataset/hdf5s/urmp/34_Fugue_tpt_tpt_hn_tbn/AuSep_4_tbn_34_Fugue.h5,dataset/hdf5s/urmp/43_Chorale_tpt_tpt_hn_tbn_tba/AuSep_5_tba_43_Chorale.h5
+Trumpet,Horn	dataset/hdf5s/urmp/18_Nocturne_vn_fl_tpt/AuSep_3_tpt_18_Nocturne.h5,dataset/hdf5s/urmp/43_Chorale_tpt_tpt_hn_tbn_tba/AuSep_3_hn_43_Chorale.h5
+Flute,Oboe	dataset/hdf5s/urmp/37_Rondeau_fl_vn_va_cl/AuSep_1_fl_37_Rondeau.h5,dataset/hdf5s/urmp/41_Miserere_fl_fl_ob_sax_bn/AuSep_3_ob_41_Miserere.h5
+Clarinet,Bassoon	dataset/hdf5s/urmp/37_Rondeau_fl_vn_va_cl/AuSep_4_cl_37_Rondeau.h5,dataset/hdf5s/urmp/41_Miserere_fl_fl_ob_sax_bn/AuSep_5_bn_41_Miserere.h5
