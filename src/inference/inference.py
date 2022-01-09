@@ -108,8 +108,6 @@ class Inference():
 					preds.append(self.network(batch, mode)) 
 		return preds
 
-
-
 	def getHQuery(self):
 		output_dir = self.output_dir
 		model_name = self.model_name
@@ -131,7 +129,6 @@ class Inference():
 			path = f"{output_dir}/{instr_name}.npy"
 			q = np.concatenate(results[instr_name], 0)
 			np.save(path, q)
-
 
 	def synthesis(self, path, track_id):
 		output_dir = self.output_dir

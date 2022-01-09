@@ -19,7 +19,7 @@ class UrmpTest(object):
 			instruments = fs[0].split(',')
 			files = fs[1].split(',')
 			query = qs[1].split(',')
-			sample_name = str.replace(files[0].split('_')[-1], '.h5' ,'')
+			sample_name = str.replace(files[0].split('_')[-2], '.' ,'')
 			sample = {}
 			for j, instr in enumerate(instruments):
 				sample[instr] = {}

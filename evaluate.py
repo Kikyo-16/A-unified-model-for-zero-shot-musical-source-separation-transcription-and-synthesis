@@ -24,7 +24,7 @@ if __name__=='__main__':
 	parser.add_argument('--model_path', type=str, required=True, help='Model weights path.')
 	parser.add_argument('--evaluation_folder', type=str, required=True, help='Directory to store evaluation results.')
 	parser.add_argument('--epoch', type=str, required=True, help='Epoch.')
-
+	parser.add_argument('--ps', type=int, required=True, help='Processes number.')
 
 	args = parser.parse_args()
 
@@ -32,6 +32,7 @@ if __name__=='__main__':
 	model_path = args.model_path
 	output_dir = args.evaluation_folder
 	epoch = args.epoch	
+	processes_num = args.ps
 
 	evaluation_dir = f"{output_dir}/{model_name}"
 
@@ -43,9 +44,8 @@ if __name__=='__main__':
 		scores[mode] = {}
 		pred = preds[mode]
 		if mode in ["AMT", "MSS-AMT", "MSI", "MSI-DIS"]:
-			scores[mode]["transcription"] = evaluate_transcription(pred)
+			scores[mode]["transcription"] = evaluate_transcription(pred, processes_num=processes_num)
 		if mode in ["MSS", "MSS-AMT", "MSI", "MSI-S", "MSI-MSI", "MSI-DIS", "MSI-DIS-S"]:
-			scores[mode]["separation"] = evaluate_separation(pred)
-	
+			scores[mode]["separation"] = evaluate_separation(pred, processes_num=processes_num)
 	save_json(inference.score_path, scores)
 
