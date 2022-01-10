@@ -72,6 +72,8 @@ python train.py --model_name=MSI_DIS --model_folder=folder_to_store_model_weight
 ```
 
 ### Evaluation
+Download models weights [here](https://drive.google.com/drive/folders/1fT3Fva5JywhpYnOhsORbDkLQ9Vnhv_Lj?usp=sharing).
+```
 Run the following command to evaluate the proposed MSI-DIS Model on the test set:
 ```
 python evaluate.py --model_name=MSI_DIS --model_path=path_of_model_weights --evaluation_folder=folder_to_store_evaluation_results --epoch=199
