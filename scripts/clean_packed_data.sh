@@ -9,6 +9,6 @@ do
 done
 rm .packed_data.name
 #rm -Rf .git/refs/original
-#rm -Rf .git/logs
-#git gc
-
+#git reflog expire --expire=now --all
+#git gc --aggressive --prune=now
+#
