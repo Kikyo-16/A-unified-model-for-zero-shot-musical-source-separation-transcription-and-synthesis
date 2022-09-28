@@ -97,7 +97,7 @@ Please cite our work as:
 >@inproceedings{lin2021unified,  
 >title={A Unified Model for Zero-shot Music Source Separation, Transcription and Synthesis},   
 >author={Liwei Lin and Qiuqiang Kong and Junyan Jiang and Gus Xia},  
->booktitle = {Proceedings of 21st International Conference on Music Information Retrieval, {ISMIR}},  
+>booktitle = {Proceedings of 22st International Conference on Music Information Retrieval, {ISMIR}},  
 >year = {2021}  
 >}
 
